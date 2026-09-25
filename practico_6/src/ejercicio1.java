@@ -173,7 +173,7 @@ public void vaciarCampos(JPanel panel) {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAgregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarActionPerformed
-                                // Validar campos vacíos dentro del panel
+                                
             if (!validarCamposVacios(jPanel1)) {
           JOptionPane.showMessageDialog(this,
             "Debe completar todos los campos.",
@@ -186,7 +186,7 @@ public void vaciarCampos(JPanel panel) {
             String nombre = txtNombre.getText().trim();
             String precioTexto = txtPrecio.getText().trim();
 
-// Validación de número
+// Validamos número
             double precio;
             try {
          precio = Double.parseDouble(precioTexto);
